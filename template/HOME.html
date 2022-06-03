@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../static/css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- the header of our EHR-->  
+    <nav
+      class="navbar navbar-expand-sm fixed-top"
+      style="
+        background-color: rgb(0, 0, 126);
+        font-size: 16px;
+        box-shadow: 2px 2px 8px;
+      "
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler navbar-toggler-icon"
+          data-bs-toggle="collapse"
+          data-bs-target="#navColl"
+          id="toggler-btn"
+        ></button>
+        <div
+          class="collapse navbar-collapse"
+          id="navColl"
+          style="background-color: rgb(0, 0, 126)"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-light text_navbar">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-light text_navbar">Info</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-light text_navbar">Guide</a>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-9 text-light">
+            <h5
+              style="
+                vertical-align: text-bottom;
+                height: 40px;
+                padding-top: 10px;
+              "
+            >
+              Hello World
+            </h5>
+          </div>
+          <div class="col-3">
+            <img
+              src="../static/img/person-circle.svg"
+              alt="#"
+              style="height: 40px"
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-------------------------------------->
+    <!--
+    -->
+        <!--Welcome + Button-->  
+        <div class="p-5 row">
+            <div class="col-12">
+                <h2 style="text-align: center;margin: 30px;color: rgb(9, 9, 94);text-shadow: 1px 1px 2px;">Welcome to our EHR system</h3>
+                <h5 style="text-align: center;color:rgb(75, 75, 75)">
+                    in this EHR system you will be able to create and edit your patients' 
+                    records if you are a health provider. but if you want to use EHR services as patient make sure to register and improve your health care.
+                </h5>
+            </div>
+            <div class="btn btn-info text-dark mt-3" style="border-radius: 100px;box-shadow: 2px 2px 5px">Register as Patient</div>
+            
+        </div> 
+    
+    <!-- photos of health providers and cards -->
+      <div  class="row container-fluid" style="height: 500px;">
+          
+        
+        <div class="col-4 container " style="box-shadow: 1px 1px 5px;">
+          <div class="btn btn-light w-100 container">
+            <img  class="w-50 container" src="../static/img/doctor.png" alt="#">
+          </div>
+          <div class="card-footer container">
+            <div class="btn btn-info btn-sm w-100 mt-3 container"style="border-radius: 100px;box-shadow:2px 2px 5px"><p class="w-100 container" >Register as a doctor</p></div>
+          </div>
+        </div>
+
+        <div class="col-4 container"style="box-shadow: 1px 1px 5px;">
+          <div class="btn btn-light w-100 container">
+            <img class="w-50 container"  src="../static/img/pharmacy.png" alt="#">
+          </div>
+          <div class="card-footer container">
+            <div class="btn btn-info btn-sm w-100 mt-3 container"style="border-radius: 100px;box-shadow:2px 2px 5px"><p class="w-100 container">Register as a pharmacy</p></div>
+          </div>
+        </div>
+
+        <div class="col-4 container"style="box-shadow: 1px 1px 10px;">
+          <div class="btn btn-light w-100 container">
+            <img class="w-50 container"  src="../static/img/laboratory.png" alt="#">
+          </div>
+          <div class="card-footer container">
+            <div class="btn btn-info btn-sm w-100 mt-3 container"style="border-radius: 100px;box-shadow:2px 2px 5px"><p class="w-100 container">Register as a labroatory</p></div>
+          </div>
+        </div>
+
+      </div>
+    
+    
+
+    <!--TEXTS What is EHR ?-->
+    
+    <div class="row mt-5" style="height: 200px;"> 
+      <button
+        class="col-4 bg-light info-btn"
+        data-bs-toggle="collapse"
+        data-bs-target="#ehr-info"
+        style="border: 0px;"
+      >
+        <h3>What is EHR ?</h3>
+      </button>
+      <button
+        class="col-4 bg-light info-btn"
+        data-bs-toggle="collapse"
+        data-bs-target="#actors-info"
+        style="border: 0px;"
+      >
+        <h3>Actors ?</h3>
+      </button>
+      <button
+        class="col-4 bg-light info-btn"
+        data-bs-toggle="collapse"
+        data-bs-target="#patient-info"
+        style="border: 0px;"
+      >
+        <h3>How thet interact ?</h3>
+      </button>
+    </div>
+    <div class="collapse bg-info container" id="ehr-info">ehr dd</div>
+    <div class="collapse bg-info" id="actors-info">actors</div>
+    <div class="collapse bg-info" id="patient-info">patient</div>
+    
+ 
+
+    <!-- the footer of our EHR--> 
+    <footer class="bg-dark justify-content-center" style="height: 200px;">
+      <p class="text-light" style="text-align: center">contact us</p>
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a href="#" class="nav-link"><img src="../static/img/facebook.svg" alt="#"></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><img src="../static/img/github.svg" alt="#"></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><img src="../static/img/twitter.svg" alt="#"></a></li>
+      </ul>
+    </footer>
+
+    <!-------------------------------------->
+
+  <script src="{%static 'js/jquery-3.6.0.min.js'%}"></script>
+    <script src="{%static 'js/popper.min.js'%}"></script>
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      })
+    </script>
+
+
+  
+  </body>
+</html>
